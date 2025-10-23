@@ -18,7 +18,7 @@ function App() {
   const handlePrev = () => {
     if (containerRef.current) {
       containerRef.current.scrollBy({
-        left: -246,
+        left: -206,
         behavior: "smooth",
       });
     }
@@ -27,7 +27,7 @@ function App() {
   const handleNext = () => {
     if (containerRef.current) {
       containerRef.current.scrollBy({
-        left: 246,
+        left: 206,
         behavior: "smooth",
       });
     }
@@ -135,13 +135,13 @@ function App() {
           </div>
 
 
-          <div className="flex gap-4 overflow-hidden"
+          <div className="flex gap-4 overflow-hidden p-5"
             ref={containerRef}>
             {images.map((id) => (
               <img
                 key={id}
                 src="/images/img.png"
-                className="w-[230px]"
+                className="w-[180px] hover:scale-110 duration-200 grayscale-100 hover:grayscale-0" 
                 alt={`img-${id}`}
               />
             ))}
