@@ -3,7 +3,7 @@ import './App.css'
 
 
 function App() {
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState('About Me')
 
   const tabs = ['About Me', 'Experience', 'Recommended']
   const activeIndex = tabs.indexOf(active)
@@ -141,7 +141,7 @@ function App() {
               <img
                 key={id}
                 src="/images/img.png"
-                className="w-[180px] hover:scale-110 duration-200 grayscale-100 hover:grayscale-0" 
+                className="w-[130px] xl:w-[180px] hover:scale-110 duration-200 grayscale-100 hover:grayscale-0" 
                 alt={`img-${id}`}
               />
             ))}
